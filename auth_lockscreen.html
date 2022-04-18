@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Ditzzsenpai API</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="../../../css?family=Nunito:400,600,700" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/authentication/form-1.css" rel="stylesheet" type="text/css">
+    <!-- END GLOBAL MANDATORY STYLES -->
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/forms/theme-checkbox-radio.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/forms/switches.css">
+</head>
+<body class="form">
+  <style>
+
+.active {
+    color: #0f0;
+}
+
+.cursor {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+</style>  
+
+    <div class="form-container">
+        <div class="form-form">
+            <div class="form-form-wrap">
+                <div class="form-container">
+                    <div class="form-content">
+
+                        <div class="d-flex user-meta">
+                            <img src="//telegra.ph/file/8fe6e556530ed2afc54cf.png" class="usr-profile" alt="avatar">
+                            <div class="">
+                                <b style="font-size: 25px;" class="">Ditzzsenpai - API</b>
+                            </div>
+                        </div>
+
+                        <form action="/users/login" class="text-left">
+                            <div class="form">
+
+                                <div id="password-field" class="field-wrapper input mb-2">
+                                 <b style="font-size: 25px;">STATUS : <b style="color: #4AF626;" class="active"></b> <span class="cursor typing"></span> </b>
+                                </div>
+                                <div class="d-sm-flex justify-content-between">
+     
+                                    <div class="field-wrapper">
+                                        <button type="submit" onlclick="loginDocs()"class="btn btn-primary" value="">Read Docs</button>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </form>   
+</br>           
+          <a class="terms-conditions" href="//Instagram.com/ftditzzxy" target="_blank"><i class="fa fa-instagram" style="font-size:18px;color:white"></i></a>
+        <a class="terms-conditions" href="//wa.me//628988293493" target="_blank"><i class="fa fa-whatsapp" style="font-size:18px;color:white; margin-left:10px; margin-right:10px;"></i></a>
+        
+         <a class="terms-conditions" href="//github.com/ditzzxd" target="_blank"><i class="fa fa-github" style="font-size:18px;color:white"></i></a>
+         	
+                        <p class="terms-conditions">© 2022 All Rights Reserved. <a href="/about">Ditzzsenpai</a>.</p>
+
+                    </div>    
+              
+          	
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div class="form-image">
+            <div class="l-image">
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- BEGIN GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+    <!-- END GLOBAL MANDATORY SCRIPTS -->
+    <script src="assets/js/authentication/form-1.js"></script>
+<script>
+	const typedTextSpan = document.querySelector(".active"),
+    textArray = ["ONLINE", "ENJOY~"],
+    typingDelay = 200,
+    erasingDelay = 100,
+    newTextDelay = 2e3;
+let textArrayIndex = 0,
+    charIndex = 0;
+
+function type() {
+    charIndex < textArray[textArrayIndex].length ?
+        ((typedTextSpan.textContent +=
+                textArray[textArrayIndex].charAt(charIndex)),
+            charIndex++,
+            setTimeout(type, 200)) :
+        setTimeout(erase, 2e3);
+}
+
+function erase() {
+    charIndex > 0 ?
+        ((typedTextSpan.textContent = textArray[textArrayIndex].substring(
+                0,
+                charIndex - 1
+            )),
+            charIndex--,
+            setTimeout(erase, 100)) :
+        (textArrayIndex++,
+            textArrayIndex >= textArray.length && (textArrayIndex = 0),
+            setTimeout(type, 1300));
+}
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(type, 2250);
+});
+
+
+	</script>
+</body>
+</html>
